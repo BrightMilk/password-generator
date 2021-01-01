@@ -33,6 +33,17 @@
             <div id = "pass_text" style="font-weight: bold"></div>  
         </div>
         <!-- Скрипт, который генерирует пароль по нажатию кнопки -->
-        <script></script>
+        <script>
+            var site, salt;
+            var text, password;
+            
+            function generate() {
+                site = document.getElementById('site_url').value;
+                salt = document.getElementById('keyword').value;
+                text = site + salt + 'sample text';
+                password = md5(text);
+                document.getElementById('pass_text').innerHTML = password;
+            }
+        </script>
     </body>
 </html> 
