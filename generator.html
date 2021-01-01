@@ -1,15 +1,24 @@
 <html>
-<head>
-    <title>Генератор паролей</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Подключаем функцию, которая хеширует строку -->
-    <script src="https://thecode.media/wp-content/uploads/2019/05/js-md5.js"></script>
-    <style type="text/css">
-    </style>
-</head>
-<body>
-    <!-- Скрипт, который генерирует пароль по нажатию кнопки -->
-    <script></script>
+    <head>
+        <title>Генератор паролей</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Подключаем функцию, которая хеширует строку -->
+        <script src="https://thecode.media/wp-content/uploads/2019/05/js-md5.js"></script>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <div class="container"  margin: auto;">
+            <h2 class="todo__caption">Генератор паролей</h2><br>
+            <input type="text" id="site_url" size="50" placeholder="Адрес сайта, для которого нужен пароль"><br>
+            <input type="text" id="keyword" size="50" placeholder="Кодовое слово для усиления пароля"><br><br>
+            <button style="font-size: 100%; padding:5px 10px 10px 10px" onclick="generate()">Создать пароль</button>
+            <p>Ваш пароль:</p>
+            <div id = "pass_text" style="font-weight: bold"></div>  
+        </div>
+        <!-- Скрипт, который генерирует пароль по нажатию кнопки -->
+        <script></script>
+    </body>
 </html> 
