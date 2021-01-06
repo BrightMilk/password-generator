@@ -28,7 +28,7 @@ function generate() {
      */
     site = document.getElementById('site_url').value;
     salt = document.getElementById('keyword').value;
-    text = site + salt + 'sample text';
+    text = site + salt + 'Medyanik Artem amedyanik.dev@gmail.com';
 
     /**
      * Создаем пароль на основе функции, подключенной в заголовке документа.
