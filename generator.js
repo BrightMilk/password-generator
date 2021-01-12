@@ -36,7 +36,7 @@ var sourcePass;
 
 /**
  * Спецсимволы для добавления в пароль.
- * 
+ * @type {string}
  */
 var symbols = '%:*#@%&';
 
