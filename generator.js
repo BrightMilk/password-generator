@@ -61,3 +61,7 @@ function generate() {
      */
     document.getElementById('pass_text').innerHTML = password;
 }
+
+document.getElementById('keyword').addEventListener('keydown', (e) => {
+    generate();
+});
