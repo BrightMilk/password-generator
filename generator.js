@@ -45,13 +45,13 @@ var symbols = '%:*#@%&';
  */
 function generate() {
     /**
-     * Сохраняем текстовые значения в переменные
+     * Сохраняем текстовые значения в переменные.
      */
     site   = document.getElementById('site_url').value;
     salt   = document.getElementById('keyword').value;
     secNum = document.getElementById('secnumber').value;
 
-    /* Введенное число не должно быть меньше 1 */
+    /* Введенное число не должно быть меньше 1. */
     if (secNum < 1) secNum = 1;
 
     text = site + salt + 'Medyanik Artem amedyanik.dev@gmail.com';
@@ -62,7 +62,7 @@ function generate() {
     sourcePass = md5(text);
 
     /**
-     * Обнуляем переменную, в которой будет храниться измененный пароль
+     * Обнуляем переменную, в которой будет храниться измененный пароль.
      */
     password = '';
 
