@@ -67,6 +67,34 @@ function generate() {
     password = '';
 
     /**
+     * Цикл отвечает за большие числа и спецсимволы в пароле;
+     * проходит всю длину строки и обрабатывает каждый символ.
+     */
+    for (var i=0; i< sourcePass.length; i++) {
+
+        /**
+         * Секретным числом определяем шаг, с которым будем делать следующую заглавную букву в пароле.
+         */
+        var upperstep = secnum % 3;
+
+        /**
+         * Если шаг сработал — делаем большой символ, иначе оставляем старый.
+         */
+        if (i % upperstep == 0) { password += sourcePass[i].toUpperCase(); } 
+        else { password += sourcePass[i]; }
+
+        /**
+         * Если поставлена галочка "Использовать спецсимволы"...
+         */
+        if (document.getElementById('sym').checked) {
+            /**
+             * На каждой третьей итерации вставляем спецсимвол на нужное место.
+             */
+            if (i % 3 == 0) { password += symbols[secnum % 6]; } 
+        }
+    } 
+    
+    /**
      * Вывод результата на экран.
      */
     document.getElementById('pass_text').innerHTML = password;
