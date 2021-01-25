@@ -140,6 +140,12 @@ function generate() {
     document.getElementById('pass_text').innerHTML = password;
 }
 
+document.getElementById('ad_enc').addEventListener('change', () => {
+    adEncCounter = document.getElementById('ad_enc_counter');
+    if (adEncCounter.disabled) adEncCounter.disabled = false;
+    else adEncCounter.disabled = true;
+});
+
 document.getElementById('keyword').addEventListener('keydown', (e) => {
     generate();
 });
