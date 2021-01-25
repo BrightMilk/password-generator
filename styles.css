@@ -13,3 +13,7 @@ input {
     font-family: Verdana, Arial, sans-serif;
     font-size: 16px;
 }
+
+#ad_enc_counter {
+    width: 80px;
+}
